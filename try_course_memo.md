@@ -3,7 +3,6 @@
 ### 00. 環境構築
 
 #### 遭遇したエラー
-
 ##### python 'empy' NOT FOUND
  ```
 colcon build --symlink-install
@@ -17,6 +16,21 @@ pip3 install -U empy
 ```
 
 ### 01. 車両インターフェース 
+編集対象ファイルはsrc/autoware_practice_course/src/vehicle/forward.cppにあります。
+
+#### 遭遇したエラー
+
+##### ros2: command not found
+rosインストール済みでけど、パスがうまく設定てきてないと発生します。
+```
+source /opt/ros/humble/setup.bash
+```
+
+##### Package 'autoware_practice_course' not found
+違うTerminalでROS2コマンドを実行しようとすると、発生する。
+```
+source install/setup.bash
+```
 
 ### 02. 速度計画 
 
