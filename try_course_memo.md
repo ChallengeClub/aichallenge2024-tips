@@ -22,12 +22,14 @@ pip3 install -U empy
 
 ##### ros2: command not found
 rosインストール済みでけど、パスがうまく設定てきてないと発生します。
+ターミナルが複数利用することが多く、~/.bashrcに追記したほうが便利。
 ```
 source /opt/ros/humble/setup.bash
 ```
 
 ##### Package 'autoware_practice_course' not found
 違うTerminalでROS2コマンドを実行しようとすると、発生する。
+ターミナルが複数利用することが多く、~/.bashrcに追記したほうが便利。
 ```
 source install/setup.bash
 ```
