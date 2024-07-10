@@ -4,7 +4,7 @@
 
 ## Tips
 - [リンク集](Link.md)
-- [dachdaさんの公式の講座を試してみたメモ](try_course_memo.md)
+- [dachdaさんの公式の講座を試してみたメモ](memo-share/yu/try_course_memo.md)
 - [fujitaさんの環境構築の道のり](20240703_fujita.md)
 
 ## イベント
