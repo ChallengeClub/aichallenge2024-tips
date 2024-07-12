@@ -6,4 +6,8 @@
 - [aichallenge-2024](https://github.com/AutomotiveAIChallenge/aichallenge-2024) … 開発ソースコード
 
 ## Autoware関連
+### 学習動画
 - [Autoware全体像とノード構造の説明 (2024.03)](https://www.youtube.com/watch?v=aNY8f4LKZZE)
+### 構造
+- [Autoware-Micro](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/development/main-module.html)
+- [Autoware本家の構造図](https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-architecture/node-diagram/)
