@@ -3,7 +3,7 @@
 ## おおまなか手順
 ### 1度だけ実行すればよい手順
 1. [自動運転AIチャレンジの環境構築](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/setup/requirements.html)を完了させる
-2. [Autoware入門講座の環境構築](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/course/index.html#_2)にあるように、ROS2 Humbleの公式手順に沿ってROS2をインストールする
+2. [Autoware入門講座の環境構築](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/course/index.html#_2)にあるように、[ROS2 Humbleの公式手順](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)に沿ってROS2をインストールする
 ### 毎回実行する必要がある手順
 - `source /opt/ros/humble/setup.bash`
 
