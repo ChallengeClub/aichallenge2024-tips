@@ -8,7 +8,9 @@
   - [公式の講座を試してみたメモ](memo-share/yu/try_course_memo.md)
   - [コード解読](memo-share/yu/read_code.md)
 - [fujitaさんの環境構築の道のり](20240703_fujita.md)
-- [tomoさんの経路計画で絶望日記](20240724_tomo.md)
+- tomoさんの
+  - [経路計画で絶望日記](20240724_tomo.md)
+  - [ROS2インストール手順](20240729_ros2-for-course.md)
 
 ## イベント
 - [2024/06/21 交流会](20240621.md)
