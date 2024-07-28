@@ -1,4 +1,4 @@
-# [Autoware入門講座](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/course/index.html)を実施するためのROS2インストール手順
+# [Autoware入門講座](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/course/index.html)を実施するためのROS2最小インストール手順
 
 ## おおまなか手順
 ### 1度だけ実行すればよい手順
@@ -36,3 +36,8 @@
   - `source /opt/ros/humble/setup.bash`
     - これを実行しないと、`ros2`コマンドなどを実行した際に、`ros2: command not found`などと返される
     - `~/.bashrc`などに、`source /opt/ros/humble/setup.bash`を追記することで、毎回手動で実行することを避けることができる
+   
+## おまけ: aptによるupgrade
+- ROS2のインストールという観点では、`sudo apt update`と`sudo apt upgrade`は1度実施すれば良いのですが、脆弱性対応や不具合修正という観点では、日常的に`sudo apt update`と`sudo apt upgrade`を実施しておいたほうが良いかと思います
+  - まれに更新することにより問題が起こる場合もありますが、逆に問題が直る場合もあるかと思います
+  - 最新状態で実行できない場合は、後からインストールした参加者も同じことになっている可能性が高いので、他のメンバーや運営に相談しましょう
