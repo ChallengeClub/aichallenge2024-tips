@@ -4,7 +4,7 @@
 ### 1度だけ実行すればよい手順
 1. [自動運転AIチャレンジの環境構築](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/setup/requirements.html)を完了させる
 2. [Autoware入門講座の環境構築](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/course/index.html#_2)にあるように、[ROS2 Humbleの公式手順](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)に沿ってROS2をインストールする
-### 毎回実行する必要がある手順
+### 毎回実行する必要がある手順(別途~/.bashrcなどによる自動化手段あり)
 - `source /opt/ros/humble/setup.bash`
 
 ## ROS2 Humbleの公式手順のうち、1度だけ実行すれば良い手順の詳細
@@ -35,7 +35,7 @@
 - [Environment setup](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#environment-setup)の、[Sourcing the setup script](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#sourcing-the-setup-script)の、"Set up your environment by sourcing the following file."の、以下
   - `source /opt/ros/humble/setup.bash`
     - これを実行しないと、`ros2`コマンドなどを実行した際に、`ros2: command not found`などと返される
-    - `~/.bashrc`などに、`source /opt/ros/humble/setup.bash`を追記することで、毎回手動で実行することを避けることができる
+    - `~/.bashrc`などに、`source /opt/ros/humble/setup.bash`を追記することで読み込みを自動化し、毎回手動で実行することを避けることができる
    
 ## ここまで実行したら
 - あとは`ros2`コマンドなどでROS2を楽しむだけ!
