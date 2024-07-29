@@ -31,7 +31,7 @@
     - `sudo apt install ros-dev-tools`
       - これで、ROS2の開発ツールがインストールされる
 
-## ROS2 Humbleの公式手順のうち、シェル起動後に、毎回手動で実行する必要がある手順の詳細
+## ROS2 Humbleの公式手順のうち、シェル起動後に、毎回手動で実行する必要がある手順の詳細(別途~/.bashrcなどによる自動化手段あり)
 - [Environment setup](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#environment-setup)の、[Sourcing the setup script](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#sourcing-the-setup-script)の、"Set up your environment by sourcing the following file."の、以下
   - `source /opt/ros/humble/setup.bash`
     - これを実行しないと、`ros2`コマンドなどを実行した際に、`ros2: command not found`などと返される
@@ -39,6 +39,7 @@
    
 ## ここまで実行したら
 - あとは`ros2`コマンドなどでROS2を楽しむだけ!
+- ビルドなど実行前には、`source install/setup.bash`が必要かも
    
 ## おまけ: aptによるupgrade
 - ROS2のインストールという観点では、`sudo apt update`と`sudo apt upgrade`は1度実施すれば良いのですが、脆弱性対応や不具合修正という観点では、日常的に`sudo apt update`と`sudo apt upgrade`を実施しておいたほうが良いかと思います
