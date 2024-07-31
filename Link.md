@@ -7,6 +7,7 @@
 
 ## ツール
 - [Vector Map Builder](https://tools.tier4.jp/vector_map_builder_ll2/)
+  - [使い方説明動画](https://www.youtube.com/watch?v=GvZr707TmuM)
 
 ## Autoware情報
 ### 学習動画
