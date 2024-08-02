@@ -4,7 +4,7 @@
 
 ## Tips
 - [リンク集](Link.md)
-- dachdaさんの
+- yuさんの
   - [公式の講座を試してみたメモ](memo-share/yu/try_course_memo.md)
   - [コード解読](memo-share/yu/read_code.md)
 - fujitaさんの
