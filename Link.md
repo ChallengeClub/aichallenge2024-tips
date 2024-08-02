@@ -18,4 +18,4 @@
 - [Autoware本家の構造図](https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-architecture/node-diagram/)
 
 ## 自動運転AIチャレンジ記事
-- [【2024年度も継続中！】自動運転AI+その他関連してそうならなんでも Advent Calendar](https://qiita.com/advent-calendar/2023/jidounten-ai)
+- [【2024年度も継続中！カレンダー"シリーズ3"以降に誰でも自由に追記OK】自動運転AI+その他関連してそうならなんでもOK Advent Calendar 2023](https://qiita.com/advent-calendar/2023/jidounten-ai)
