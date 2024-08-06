@@ -1,0 +1,157 @@
+## ROS2でのサンプルc++ノード
+ChatGPTに教えてもらった内容です。
+
+##
+ROS 2 での C++ ノードのサンプルコードを以下に示します。このサンプルでは、シンプルなパブリッシャーとサブスクライバーのノードを作成します。
+パブリッシャーノード (publisher)
+
+まず、publisher ノードを作成します。このノードは特定のトピックにメッセージを定期的に送信します。
+
+    必要なヘッダーをインクルードします。
+    ノードクラスを定義します。
+    タイマーコールバックを設定してメッセージを送信します。
+
+cpp
+
+#include <chrono>
+#include <memory>
+
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
+
+using namespace std::chrono_literals;
+
+class PublisherNode : public rclcpp::Node
+{
+public:
+  PublisherNode()
+  : Node("publisher_node")
+  {
+    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+    timer_ = this->create_wall_timer(
+      500ms, std::bind(&PublisherNode::timer_callback, this));
+  }
+
+private:
+  void timer_callback()
+  {
+    auto message = std_msgs::msg::String();
+    message.data = "Hello, ROS 2!";
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+    publisher_->publish(message);
+  }
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+  rclcpp::TimerBase::SharedPtr timer_;
+};
+
+int main(int argc, char * argv[])
+{
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<PublisherNode>());
+  rclcpp::shutdown();
+  return 0;
+}
+
+サブスクライバーノード (subscriber)
+
+次に、subscriber ノードを作成します。このノードは特定のトピックからメッセージを受信します。
+
+    必要なヘッダーをインクルードします。
+    ノードクラスを定義します。
+    コールバック関数を設定してメッセージを受信します。
+
+cpp
+
+#include <memory>
+
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
+
+class SubscriberNode : public rclcpp::Node
+{
+public:
+  SubscriberNode()
+  : Node("subscriber_node")
+  {
+    subscription_ = this->create_subscription<std_msgs::msg::String>(
+      "topic", 10, std::bind(&SubscriberNode::topic_callback, this, std::placeholders::_1));
+  }
+
+private:
+  void topic_callback(const std_msgs::msg::String::SharedPtr msg) const
+  {
+    RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+  }
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
+};
+
+int main(int argc, char * argv[])
+{
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<SubscriberNode>());
+  rclcpp::shutdown();
+  return 0;
+}
+
+ビルド方法
+
+これらのノードをビルドするためには、CMakeLists.txt ファイルを以下のように設定します。
+
+cmake
+
+cmake_minimum_required(VERSION 3.5)
+project(my_cpp_nodes)
+
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+
+add_executable(publisher_node src/publisher_node.cpp)
+ament_target_dependencies(publisher_node rclcpp std_msgs)
+
+add_executable(subscriber_node src/subscriber_node.cpp)
+ament_target_dependencies(subscriber_node rclcpp std_msgs)
+
+install(TARGETS
+  publisher_node
+  subscriber_node
+  DESTINATION lib/${PROJECT_NAME})
+
+ament_package()
+
+パッケージ設定ファイル (package.xml)
+
+また、package.xml ファイルも設定する必要があります。
+
+xml
+
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_cpp_nodes</name>
+  <version>0.0.0</version>
+  <description>ROS 2 C++ example nodes</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>Apache License 2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
+これで、ROS 2 のワークスペース内でこれらのファイルを配置し、ビルドして実行できます。ワークスペースのルートディレクトリで以下のコマンドを実行します。
+
+bash
+
+colcon build
+
+ビルドが完了したら、以下のコマンドでノードを実行します。
+
+bash
+
+source install/setup.bash
+ros2 run my_cpp_nodes publisher_node
+ros2 run my_cpp_nodes subscriber_node
+
+これで、パブリッシャーがメッセージを送信し、サブスクライバーがそのメッセージを受信する様子が確認できるはずです。
