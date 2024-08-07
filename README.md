@@ -13,7 +13,7 @@
   - [ROS2でPythonのパッケージを作ってみた](fujita/20240724_fujita.md)
   - 朝活日記
     - [2024/08/06 アイデア](fujita/20240806_idea.md)
-    - [2024/08/07 障害物回避試してみた](fujita/20240807_fujita.md)
+    - [2024/08/07 障害物検知試してみた](fujita/20240807_fujita.md)
 - tomoさんの
   - [経路計画で絶望日記](tomo/20240724_tomo.md)
   - [入門講座のためのROS2インストール手順](tomo/20240729_ros2-for-course.md)
