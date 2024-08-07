@@ -14,6 +14,7 @@
 - tomoさんの
   - [経路計画で絶望日記](tomo/20240724_tomo.md)
   - [入門講座のためのROS2インストール手順](tomo/20240729_ros2-for-course.md)
+  - [リポジトリ](https://github.com/shrimp-f/aichallenge-2024/)
 
 ## イベント
 - [2024/06/21 交流会](meeting/20240621.md)
