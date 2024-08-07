@@ -47,6 +47,74 @@ data:
 ---
 ```
 
+トピックの型を調査しました。[2024/8/7追記]
+```
+ubuntu@ubuntu-desktop:~$ ros2 topic info /aichallenge/objects -v
+Type: std_msgs/msg/Float64MultiArray
+
+Publisher count: 1
+
+Node name: AWSIM
+Node namespace: /
+Topic type: std_msgs/msg/Float64MultiArray
+Endpoint type: PUBLISHER
+GID: 01.10.db.13.37.87.4b.5d.f9.b7.30.58.00.00.07.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 3
+
+Node name: object_marker
+Node namespace: /
+Topic type: std_msgs/msg/Float64MultiArray
+Endpoint type: SUBSCRIPTION
+GID: 01.10.4e.cc.bf.51.b6.e3.1e.36.64.4b.00.00.15.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: object_marker
+Node namespace: /
+Topic type: std_msgs/msg/Float64MultiArray
+Endpoint type: SUBSCRIPTION
+GID: 01.10.90.08.e4.5c.34.6a.9a.39.2e.18.00.00.15.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: std_msgs/msg/Float64MultiArray
+Endpoint type: SUBSCRIPTION
+GID: 01.10.de.50.2e.1f.cd.7c.2c.62.b4.44.00.00.32.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+```
+
+
 (参考)
 
 ```
@@ -277,5 +345,44 @@ pose:
     z: 0.0
     w: 0.0
 ---
+
+```
+
+トピックの型を調査しました。[2024/8/7追記]
+```
+ubuntu@ubuntu-desktop:~$ ros2 topic info /sensing/gnss/pose -v
+Type: geometry_msgs/msg/PoseStamped
+
+Publisher count: 1
+
+Node name: AWSIM
+Node namespace: /
+Topic type: geometry_msgs/msg/PoseStamped
+Endpoint type: PUBLISHER
+GID: 01.10.db.13.37.87.4b.5d.f9.b7.30.58.00.00.0f.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 1
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: geometry_msgs/msg/PoseStamped
+Endpoint type: SUBSCRIPTION
+GID: 01.10.de.50.2e.1f.cd.7c.2c.62.b4.44.00.00.4f.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
 
 ```
