@@ -20,7 +20,7 @@
   - [リポジトリ](https://github.com/shrimp-f/aichallenge-2024/)
 
 ## イベント
-- [2024/06/21 交流会](meeting/20240621.md)
+- [2024/06/21 交流会](event/20240621.md)
 
 ## 定例メモ
 - [2024/06/05 キックオフ](meeting/20240605_Kickoff.md)
