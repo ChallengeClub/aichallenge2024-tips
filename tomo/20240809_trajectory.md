@@ -71,7 +71,8 @@ ValueError: could not convert string to float: ''
 - -> ChatGPTの分析によりai_challenge_converter.pyで出力されるinputs/tracks/ai_challenge.csvに、''を含む行がある
 - -> 手動で削除
 
-＃ main_globaltraj.pyの表示結果で絶望
+# main_globaltraj.pyの表示結果で絶望
+
 ![image](https://github.com/user-attachments/assets/066e2517-c415-45ce-ab88-333a1cb68379)
 
 - -> innerが表示されていない -> csvを要確認
