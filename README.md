@@ -19,6 +19,7 @@
   - 経路計画で絶望日記
     - [2024/07/24 Python動かず CSV見つからず](tomo/20240724_trajectory.md)
     - [2024/08/09 Pythonチョットワカッタ 結果に絶望](tomo/20240809_trajectory.md)
+    - [2024/08/10 ChatGPTへのお願いを間違えてDiscordに書いてしまい恥ずかしい](tomo/20240810_trajectory.md)
   - [入門講座のためのROS2インストール手順](tomo/20240729_ros2-for-course.md)
 
 ## イベント
