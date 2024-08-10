@@ -18,6 +18,7 @@
 
 # ChatGPTにリサンプルさせてみた
 - だいぶ良くなったけど、コース前半はまだずれる
-- 
+- 算出したセンターラインが、人間感覚的にセンターになってはじめて、最適経路が算出できると想定
+
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/60777ae0-fb46-4011-a73d-023f0247ab37">
 
