@@ -14,12 +14,12 @@
   - 朝活日記
     - [2024/08/06 アイデア](fujita/20240806_idea.md)
     - [2024/08/07 障害物検知試してみた](fujita/20240807_fujita.md)
+  - [リポジトリ](https://github.com/shrimp-f/aichallenge-2024/)
 - tomoさんの
   - 経路計画で絶望日記
     - [2024/07/24 Python動かず CSV見つからず](tomo/20240724_trajectory.md)
     - [2024/08/09 Pythonチョットワカッタ 結果に絶望](tomo/20240809_trajectory.md)
   - [入門講座のためのROS2インストール手順](tomo/20240729_ros2-for-course.md)
-  - [リポジトリ](https://github.com/shrimp-f/aichallenge-2024/)
 
 ## イベント
 - [2024/06/21 交流会](event/20240621.md)
