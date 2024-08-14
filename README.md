@@ -7,6 +7,7 @@
 - yuさんの
   - [公式の講座を試してみたメモ](memo-share/yu/try_course_memo.md)
   - [コード解読](memo-share/yu/read_code.md)
+  - [リポジトリ](https://github.com/dachda/aichallenge-2024)
 - fujitaさんの
   - [環境構築でのエラーと解決](fujita/20240703_fujita.md)
   - [ROS2トピック解析](fujita/20240717_fujita.md)
