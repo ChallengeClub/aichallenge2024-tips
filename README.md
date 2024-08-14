@@ -15,6 +15,11 @@
     - [2024/08/06 アイデア](fujita/20240806_idea.md)
     - [2024/08/07 障害物検知試してみた](fujita/20240807_fujita.md)
   - [リポジトリ](https://github.com/shrimp-f/aichallenge-2024/)
+- ishibushiさんの
+  - [ROS2トピック分析](memo-share/ishibushi/topic.md)
+  - [Autowareモジュール機能分析](memo-share/ishibushi/autoware_module.md)
+  - [ROS2パラメーター設定方法分析](memo-share/ishibushi/ros2.md)
+  - [開発環境の謎の挙動分析](memo-share/ishibushi/error_point.md)
 - tomoさんの
   - 経路計画で絶望日記
     - [2024/07/24 Python動かず CSV見つからず](tomo/20240724_trajectory.md)
