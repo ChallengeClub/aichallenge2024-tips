@@ -1,11 +1,12 @@
 # リンク集
 
-## 大会ページ
+## 大会公式ページ
 - [自動運転AIチャレンジ2024](https://www.jsae.or.jp/jaaic/2024ver/summary/) … 運営公式による競技情報
 - [aichallenge-documentation-2024](https://automotiveaichallenge.github.io/aichallenge-documentation-2024/index.html) … 開発環境構築手順など詳細情報
 - [aichallenge-2024](https://github.com/AutomotiveAIChallenge/aichallenge-2024) … 開発ソースコード
 
 ## ツール
+- [オンライン採点環境](https://aichallenge-board.jsae.or.jp/)
 - [Vector Map Builder](https://tools.tier4.jp/vector_map_builder_ll2/)
   - [使い方説明動画](https://www.youtube.com/watch?v=GvZr707TmuM)
 - (部員のみ)[技術チャレンジ部員向けサービス](https://github.com/ChallengeClub/service-manual)
