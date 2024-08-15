@@ -17,6 +17,7 @@
     - [2024/08/07 障害物検知試してみた](fujita/20240807_fujita.md)
   - [リポジトリ](https://github.com/shrimp-f/aichallenge-2024/)
 - ishibushiさんの
+  - [ピットストップ解説](https://zenn.dev/bushio_tech/articles/2b123eb7253f14)
   - [ROS2トピック分析](memo-share/ishibushi/topic.md)
   - [Autowareモジュール機能分析](memo-share/ishibushi/autoware_module.md)
   - [ROS2パラメーター設定方法分析](memo-share/ishibushi/ros2.md)
