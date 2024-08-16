@@ -11,6 +11,9 @@
   - [使い方説明動画](https://www.youtube.com/watch?v=GvZr707TmuM)
 - (部員のみ)[技術チャレンジ部員向けサービス](https://github.com/ChallengeClub/service-manual)
 
+## 超かっこいいロゴ
+- (超かっこいいロゴ(GoogleSlide))[https://docs.google.com/presentation/d/1iBBjG3d3YS0-RWEHZL5rKltAtRFrYH_dcYA3-LaIBPU/edit#slide=id.p]
+
 ## Autoware情報
 ### 学習動画
 - [Autoware全体像とノード構造の説明 (2024.03)](https://www.youtube.com/watch?v=aNY8f4LKZZE)
