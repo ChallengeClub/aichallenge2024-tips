@@ -42,10 +42,13 @@ ekf_localizerの情報をもとに、ノイズを除去して、加速度を正�
 
 ### Planning
 ##### Node: mission_planner
-地図情報と位置情報からルートを計算するモジュール。走行位置の調整はここを修正が必要かも。
+Autowareの標準モジュール[mission_planner](https://autowarefoundation.github.io/autoware.universe/pr-2609/planning/mission_planner/)で地図情報と位置情報からルートを計算。今回は固定のコースなので、調整することが不要かも。
 
 ##### Node: behavior_path_planner
+Autowareの標準モジュール[behavior_path_planner](https://autowarefoundation.github.io/autoware.universe/main/planning/behavior_path_planner/autoware_behavior_path_planner/)です。すでに障害物を避ける機能が入っていますが、ドキュメントによるとセンターライン付近の障害物をよけれませんので、今回の大会の障害物避けはできないなさそうです。また現状では[dummy_perception_publisher]から空Object情報を受信していている。
 
+##### Node: path_to_trajectory
+もともとはbehavior_path_plannerから出力した情報をフォーマット変換していいただけですが、これをお試しに障害物避けを試しているところです。
 
 
 ### Map
@@ -62,3 +65,15 @@ aichallenge-2024/aichallenge/workspace/src/aichallenge_submit/aichallenge_submit
 [edit map](https://qiita.com/Massy0127/items/9a646d6b8e1c33f8dace)
 
 障害物もマップ情報に追加すべき？
+
+
+### create our python module
+##### error info 
+error:
+```
+EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+```
+solution
+```
+pip install setuptools==58.2.0
+```
