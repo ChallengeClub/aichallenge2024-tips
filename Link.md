@@ -12,7 +12,7 @@
 - (部員のみ)[技術チャレンジ部員向けサービス](https://github.com/ChallengeClub/service-manual)
 
 ## 超かっこいいロゴ
-- (超かっこいいロゴ(GoogleSlide))[https://docs.google.com/presentation/d/1iBBjG3d3YS0-RWEHZL5rKltAtRFrYH_dcYA3-LaIBPU/edit#slide=id.p]
+- [超かっこいいロゴ/(GoogleSlide)](https://docs.google.com/presentation/d/1iBBjG3d3YS0-RWEHZL5rKltAtRFrYH_dcYA3-LaIBPU/edit#slide=id.p)
 
 ## Autoware情報
 ### 学習動画
