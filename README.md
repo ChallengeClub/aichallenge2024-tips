@@ -5,6 +5,7 @@
 ## Tips
 - [リンク集](Link.md)
 - yuさんの
+  - [path_to_trajectory変えてみた概要解説](memo-share/yu/path_to_trajectory.md)
   - [公式の講座を試してみたメモ](memo-share/yu/try_course_memo.md)
   - [コード解読](memo-share/yu/read_code.md)
   - [リポジトリ](https://github.com/dachda/aichallenge-2024)
