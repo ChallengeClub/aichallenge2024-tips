@@ -3,6 +3,7 @@
 定例のメモ、Tipsなどを残していきましょう。
 
 ## Tips
+- [メンバー一覧](member.md)  
 - [リンク集](Link.md)
 - yuさんの
   - [path_to_trajectory変えてみた概要解説](memo-share/yu/path_to_trajectory.md)
