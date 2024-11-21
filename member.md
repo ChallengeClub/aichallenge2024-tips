@@ -5,7 +5,7 @@
 
 ![aichallenge_result202401](https://github.com/user-attachments/assets/b2db9d5c-e5b0-448d-99eb-b02c71c20b81)
 
-- 参加メンバー（敬称略）  
+- メンバー（敬称略）  
 石伏智  
 中村友治  
 横前 高広  
